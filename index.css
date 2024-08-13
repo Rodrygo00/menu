@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 10;
+}
+
+body{
+     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(experiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010144.avif );
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: absolute;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+
+
+}
+h1{
+    color:white;
+    font-size: 45px;
+
+}
+ ul li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hove{
+    color:aqua;
+}
+
+

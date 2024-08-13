@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Belleza</title>
+</head>
+<body>
+    <h1>BIENVENIDOS</h1>
+    <script>
+        //declaramos las variables
+        let servicio, forma, costo;
+        //captura de datos
+       alert ("servicios disponbles");
+        servicio=parseInt(prompt("ingrese\n 1 para alisado \n 2 para uñas \n3 para tintes"));
+        while(servicio<1 || servicio>3)
+        {
+            servicio=parseInt(prompt("ingrese correctamente \n 1 para alisado \n2 para uñas \n 3 tintes "))
+        
+        }
+
+        forma=parseInt(prompt("Ingrese la forma de pago \n 1-Credito \n2 efectivo"));
+         while(forma<1 || forma>2)
+        
+            {
+                forma=parseInt(prompt("Ingrese correctamente la forma de pago \n 1 credito\ n 2 efectivo"));
+            }
+
+            alert("He llegado antes del se "+servicio);
+
+            if(servicio==1)
+            {
+                costo=50;
+            }
+ 
+
+
+            if(forma==1 && servicio==1)
+             {
+               document.write("Usted se iso un alisado<br>");
+               document.write("Usted ha cancelado con tarjeta de crédito<br>");
+               document.write("El costo inicial del servicio es de "+costo+"<br>");
+               document.write("Se le hara un cargo del 10% "+(costo*0.10)+"<br>");
+               document.write("El pago total sera de "+(costo*1.10));
+             }
+
+             if(forma==1 && servicio==2)
+             {
+               document.write("Usted se iso un uñas<br>");
+               document.write("Usted ha cancelado con tarjeta de crédito<br>");
+               document.write("El costo inicial del servicio es de "+costo+"<br>");
+               document.write("Se le hara un cargo del 10% "+(costo*0.10)+"<br>");
+               document.write("El pago total sera de "+(costo*1.10));
+             }
+             if(forma==1 && servicio==3)
+             {
+               document.write("Usted se iso un tintes<br>");
+               document.write("Usted ha cancelado con tarjeta de crédito<br>");
+               document.write("El costo inicial del servicio es de "+costo+"<br>");
+               document.write("Se le hara un cargo del 10% "+(costo*0.10)+"<br>");
+               document.write("El pago total sera de "+(costo*1.10));
+             }
+
+
+/*
+            switch(servicio)
+            {
+                case 1:
+                {
+                    costo=50;
+                    break;
+                }
+                case 2:
+                {
+                    costo=25;
+                    break;
+                }
+                case 3:
+                {
+                    costo=35;
+                    break;
+                }
+            }fin
+            */
+
+           alert("El costo es de "+costo)
+
+
+
+
+             // impresion
+/*
+             if(forma==1 && servicio==1)
+             {
+               document.write("Usted se iso un alisado<br>");
+               document.write("Usted ha cancelado con tarjeta de crédito<br>");
+               document.write("El costo inicial del servicio es de "+costo+"<br");
+               document.write("Se le hara un cargo del 10% "+(costo+0,10)+"<br>");
+               document.write("El pago total sera de "+(costo+1,10));
+             }
+
+       
+             else if(forma==1 && servicio==2)
+             {
+                document.write("Usted se iso las uñas<br>");
+               document.write("Usted ha cancelado en efectivo<br>");
+               document.write("El costo inicial ses de "+costo+"<br>");
+               document.write("El pago total sera de "+costo); 
+             } 
+             else if (forma==2 && servicio==3)
+
+             {
+                document.write("Usted se hizo un tinte<br>");
+               document.write("Usted ha cancelado en efectivo<br>");
+               document.write("El costo inicial es de "+costo+"<br>");
+               document.write("El pago total sera de "+costo);
+             }
+              
+*/
+    </script>
+</body>
+</html>
